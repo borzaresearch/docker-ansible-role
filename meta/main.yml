@@ -5,15 +5,14 @@ galaxy_info:
 
   license: MIT
 
-  min_ansible_version: 1.2
-
   platforms:
-    - name: Ubuntu
+    - name: ubuntu
       versions:
         - xenial
 
   galaxy_tags:
     - docker
     - role
+    - ubuntu
 
 dependencies: []
