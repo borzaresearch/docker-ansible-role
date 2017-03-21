@@ -15,7 +15,7 @@
 - name: add docker repository
   apt_repository: repo='deb [arch=amd64] https://download.docker.com/linux/ubuntu xenial/stable' state=present
 
-- name: install docker
+- name: install docker engine
   apt: name=docker-engine update_cache=yes state=installed force=yes
 
 - name: install python packages
