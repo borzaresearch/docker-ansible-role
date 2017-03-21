@@ -7,7 +7,7 @@ addons:
     packages:
     - python-pip
 
-before_script:
+install:
   - pip install ansible
 
 script:
