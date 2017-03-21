@@ -10,10 +10,9 @@
   with_items:
     - apt-transport-https
     - ca-certificates
-    - software-properties-common
 
 - name: add docker repository
-  apt_repository: repo='deb [arch=amd64] https://download.docker.com/linux/ubuntu xenial/stable' state=present
+  apt_repository: repo='deb https://apt.dockerproject.org/repo ubuntu-xenial main' state=present
 
 - name: install docker engine
   apt: name=docker-engine update_cache=yes state=installed force=yes
