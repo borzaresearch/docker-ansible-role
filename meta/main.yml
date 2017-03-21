@@ -20,6 +20,7 @@ galaxy_info:
     - docker
     - role
     - ubuntu
+    - xenial
 
 dependencies: []
 
