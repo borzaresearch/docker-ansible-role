@@ -17,4 +17,4 @@ install:
   - pip install ansible
 
 script:
-  - ansible-playbook tests/vagrant.yml --syntax-check
+  - ansible-playbook tests/vagrant.yml -i ./etc/ansible/hosts --syntax-check
