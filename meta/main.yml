@@ -23,6 +23,3 @@ galaxy_info:
     - xenial
 
 dependencies: []
-
-notifications:
-  webhooks: https://galaxy.ansible.com/api/v1/notifications/
