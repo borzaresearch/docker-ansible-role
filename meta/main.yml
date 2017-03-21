@@ -1,0 +1,19 @@
+# https://galaxy.ansible.com/
+galaxy_info:
+  author: paulborza
+  description: Docker role for Ansible
+
+  license: MIT
+
+  min_ansible_version: 1.2
+
+  platforms:
+    - name: Ubuntu
+      versions:
+        - xenial xerus
+
+  galaxy_tags:
+    - docker
+    - role
+
+dependencies: []

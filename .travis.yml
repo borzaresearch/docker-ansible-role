@@ -1,0 +1,14 @@
+# https://travis-ci.org/
+language: python
+python: 2.7
+
+addons:
+  apt:
+    packages:
+    - python-pip
+
+before_script:
+  - pip install ansible
+
+script:
+  - ansible-playbook tests/test.yml -i tests/inventory --syntax-check
