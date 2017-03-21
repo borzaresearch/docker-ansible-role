@@ -1,0 +1,22 @@
+#
+# Copyright (c) 2017 Paul Borza
+#
+# This software may be modified and distributed under the terms
+# of the MIT license. See the LICENSE file for details.
+#
+
+- name: install ubuntu packages
+  apt: name={{item}} update_cache=yes state=installed force=yes
+  with_items:
+    - apt-transport-https
+    - ca-certificates
+    - software-properties-common
+
+- name: add docker repository
+  apt_repository: repo='deb [arch=amd64] https://download.docker.com/linux/ubuntu xenial/stable' state=present
+
+- name: install docker
+  apt: name=docker-engine update_cache=yes state=installed force=yes
+
+- name: install python packages
+  pip: name=docker-py

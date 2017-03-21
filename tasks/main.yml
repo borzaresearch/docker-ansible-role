@@ -5,11 +5,5 @@
 # of the MIT license. See the LICENSE file for details.
 #
 
-root = true
-
-[*]
-charset = utf-8
-end_of_line = lf
-insert_final_newline = true
-indent_size = 4
-indent_style = space
+- include: ubuntu.yml
+  when: "ansible_distribution == 'Ubuntu'"
