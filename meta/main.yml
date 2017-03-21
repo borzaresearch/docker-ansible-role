@@ -6,7 +6,7 @@ galaxy_info:
   license: MIT
 
   platforms:
-    - name: ubuntu
+    - name: Ubuntu
       versions:
         - xenial
 
@@ -16,3 +16,6 @@ galaxy_info:
     - ubuntu
 
 dependencies: []
+
+notifications:
+  webhooks: https://galaxy.ansible.com/api/v1/notifications/
