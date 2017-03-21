@@ -11,7 +11,7 @@
   vars:
     vagrant: true
   roles:
-    - ../
+    - ansible-docker-role
   tasks:
     - name: echo
       command: echo "Hello World!"
