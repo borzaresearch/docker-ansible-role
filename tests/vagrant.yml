@@ -11,7 +11,7 @@
   vars:
     vagrant: true
   roles:
-    - paulborza.docker
+    - ../
   tasks:
     - name: echo
       command: echo "Hello World!"
