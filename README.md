@@ -34,7 +34,7 @@ Second, create a file named `example-playbook.yml`. Use the following YAML file 
       become: true
       docker_container:
         name: DESIRED_CONTAINER_NAME
-        image: YOUR_DOCKER_HUB_USERNAME/YOUR_DOCKER_REPOSITORY
+        image: YOUR_DOCKER_HUB_USERNAME/YOUR_DOCKER_HUB_REPOSITORY
         restart_policy: always
 ```
 
