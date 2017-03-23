@@ -12,12 +12,17 @@
     - apt-transport-https
     - ca-certificates
 
-- name: add docker repository
+- name: add docker gpg key
+  become: true
+  apt_key: 
+    url: https://apt.dockerproject.org/gpg
+
+- name: add trusty docker repository
   become: true
   apt_repository: repo='deb https://apt.dockerproject.org/repo ubuntu-trusty main' state=present
   when: ansible_distribution_release == 'trusty'
 
-- name: add docker repository
+- name: add xenial docker repository
   become: true
   apt_repository: repo='deb https://apt.dockerproject.org/repo ubuntu-xenial main' state=present
   when: ansible_distribution_release == 'xenial'
@@ -26,6 +31,7 @@
   become: true
   apt: name=docker-engine update_cache=yes state=installed force=yes
 
-- name: install python packages
+# docker-py is required by the docker ansible module.
+- name: install docker python package
   become: true
   pip: name=docker-py
