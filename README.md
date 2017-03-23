@@ -4,8 +4,8 @@
 
 ## Supported OS
 
-- Ubuntu Trusty
-- Ubuntu Xenial
+- Ubuntu 14.04 LTS (Trusty Tahr)
+- Ubuntu 16.04 LTS (Xenial Xerus)
 
 ## Usage
 
