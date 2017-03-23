@@ -2,6 +2,11 @@
 
 [![Build Status](https://img.shields.io/travis/paulborza/ansible-docker-role/master.svg?style=flat)](https://travis-ci.org/paulborza/ansible-docker-role)
 
+## Supported OS
+
+- Ubuntu Trusty
+- Ubuntu Xenial
+
 ## Usage
 
 First, download the Docker role locally.
@@ -10,7 +15,7 @@ First, download the Docker role locally.
 ansible-galaxy install --force paulborza.docker
 ```
 
-Second, create a file named `example-playbook.yml`. Use the following YAML file but don't forget to replace the Docker Hub credentials and container information. The example assumes that you want to run a private container that's built by [https://hub.docker.com/](https://hub.docker.com/)
+Second, create a file named `example-playbook.yml`. Use the following YAML file as example, but don't forget to replace the Docker Hub credentials and container information. The example assumes that you want to run a private container that's built by [https://hub.docker.com/](hub.docker.com)
 
 ```
 - hosts: all
@@ -33,7 +38,7 @@ Second, create a file named `example-playbook.yml`. Use the following YAML file 
         restart_policy: always
 ```
 
-Third, create another file named `hosts` with `echo localhost > hosts`.
+Third, create another file named `hosts` by running `echo localhost > hosts`. Feel free to update the hosts file to match your infrastructure configuration.
 
 Finally, execute the playbook against the servers listed in the `hosts` file.
 
