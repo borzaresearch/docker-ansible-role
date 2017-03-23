@@ -35,7 +35,6 @@ Second, create a file named `example-playbook.yml`. Use the following YAML file 
       docker_container:
         name: DESIRED_CONTAINER_NAME
         image: YOUR_DOCKER_HUB_USERNAME/YOUR_DOCKER_HUB_REPOSITORY
-        restart_policy: always
 ```
 
 Third, create another file named `hosts` by running `echo localhost > hosts`. Feel free to update the hosts file to match your infrastructure configuration.
