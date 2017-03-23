@@ -15,7 +15,7 @@ First, download the Docker role locally.
 ansible-galaxy install --force paulborza.docker
 ```
 
-Second, create a file named `example-playbook.yml`. Use the following YAML file as example, but don't forget to replace the Docker Hub credentials and container information. The example assumes that you want to run a private container that's built by [https://hub.docker.com/](hub.docker.com)
+Second, create a file named `example-playbook.yml`. Use the following YAML file as example, but don't forget to replace the Docker Hub credentials and container information. The example assumes that you want to run a private container that's built by [hub.docker.com](https://hub.docker.com/)
 
 ```
 - hosts: all
@@ -53,8 +53,7 @@ Please go ahead and [create a work item](https://github.com/paulborza/ansible-do
 
 ## Testing
 
-If you're just using this Ansible role, please ignore this section.
-This is for those who contribute to this Ansible role for installing Docker.
+If you're just using this Ansible role, please ignore this section. This section is for contributors.
 
 - Install [VirtualBox](https://www.virtualbox.org/)
 - Install [Vagrant](https://www.vagrantup.com/)
