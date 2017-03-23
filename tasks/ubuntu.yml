@@ -6,21 +6,26 @@
 #
 
 - name: install ubuntu packages
+  become: true
   apt: name={{item}} update_cache=yes state=installed force=yes
   with_items:
     - apt-transport-https
     - ca-certificates
 
 - name: add docker repository
+  become: true
   apt_repository: repo='deb https://apt.dockerproject.org/repo ubuntu-trusty main' state=present
   when: ansible_distribution_release == 'trusty'
 
 - name: add docker repository
+  become: true
   apt_repository: repo='deb https://apt.dockerproject.org/repo ubuntu-xenial main' state=present
   when: ansible_distribution_release == 'xenial'
 
 - name: install docker engine
+  become: true
   apt: name=docker-engine update_cache=yes state=installed force=yes
 
 - name: install python packages
+  become: true
   pip: name=docker-py
