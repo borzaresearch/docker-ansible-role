@@ -49,14 +49,3 @@ ansible-playbook ./example-playbook.yml -i ./hosts
 
 Got a new OS you'd like to see supported by this role?
 Please go ahead and [create a work item](https://github.com/paulborza/ansible-docker-role/issues/new) for me; or better yet, send a pull request and I'll be sure to take a look at it within 24 hours. Thanks!
-
-## Testing
-
-If you're just using this Ansible role, please ignore this section. This section is for contributors.
-
-- Install [VirtualBox](https://www.virtualbox.org/)
-- Install [Vagrant](https://www.vagrantup.com/)
-
-```bash
-vagrant up
-```
