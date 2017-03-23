@@ -53,7 +53,8 @@ Please go ahead and [create a work item](https://github.com/paulborza/ansible-do
 
 ## Testing
 
-If you're just using this Ansible role, ignore this section.
+If you're just using this Ansible role, please ignore this section.
+This is for those who contribute to this Ansible role for installing Docker.
 
 - Install [VirtualBox](https://www.virtualbox.org/)
 - Install [Vagrant](https://www.vagrantup.com/)
