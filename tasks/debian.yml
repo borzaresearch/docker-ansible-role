@@ -19,7 +19,7 @@
 
 - name: add docker repository
   become: true
-  apt_repository: repo='deb https://apt.dockerproject.org/repo ubuntu-{{ansible_distribution_release}} main' state=present
+  apt_repository: repo='deb https://apt.dockerproject.org/repo debian-{{ansible_distribution_release}} main' state=present
 
 - name: install docker engine
   become: true

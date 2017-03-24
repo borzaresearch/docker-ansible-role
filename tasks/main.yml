@@ -5,5 +5,8 @@
 # of the MIT license. See the LICENSE file for details.
 #
 
+- include: debian.yml
+  when: ansible_distribution == 'Debian'
+
 - include: ubuntu.yml
   when: ansible_distribution == 'Ubuntu'
