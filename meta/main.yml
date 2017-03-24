@@ -7,7 +7,7 @@
 
 galaxy_info:
   author: paulborza
-  description: Docker role for Ansible
+  description: Docker role for Ansible; i.e. installs Docker via Ansible
 
   license: MIT
 
