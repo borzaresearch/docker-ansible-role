@@ -1,6 +1,6 @@
 # &#128011; Docker role for Ansible
 
-[![Build Status](https://img.shields.io/travis/paulborza/ansible-docker-role/master.svg?style=flat)](https://travis-ci.org/paulborza/ansible-docker-role)
+[![Build Status](https://img.shields.io/travis/paulborza/docker-ansible-role/master.svg?style=flat)](https://travis-ci.org/paulborza/docker-ansible-role)
 
 ## Supported OS
 
@@ -53,4 +53,4 @@ ansible-playbook ./example-playbook.yml -i ./hosts
 ## Contributing
 
 Got a new OS you'd like to see supported by this role?
-Please go ahead and [create a work item](https://github.com/paulborza/ansible-docker-role/issues/new) for me; or better yet, send a pull request and I'll be sure to take a look at it within 24 hours. Thanks!
+Please go ahead and [create a work item](https://github.com/paulborza/docker-ansible-role/issues/new) for me; or better yet, send a pull request and I'll be sure to take a look at it within 24 hours. Thanks!
