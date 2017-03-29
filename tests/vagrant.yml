@@ -12,6 +12,3 @@
     vagrant: true
   roles:
     - docker-ansible-role
-  tasks:
-    - name: echo
-      command: echo "Hello World!"
