@@ -1,6 +1,6 @@
 # &#128011; Docker role for Ansible
 
-[![Build Status](https://img.shields.io/travis/paulborza/docker-ansible-role/master.svg?style=flat)](https://travis-ci.org/paulborza/docker-ansible-role)
+[![Build Status](https://img.shields.io/travis/paulborza/docker-ansible-role/master.svg)](https://travis-ci.org/paulborza/docker-ansible-role)
 
 ## Supported OS
 

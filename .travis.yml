@@ -19,3 +19,6 @@ install:
 script:
   - ansible --version
   - ansible-playbook tests/vagrant.yml -i tests/inventory --syntax-check
+
+notifications:
+  webhooks: https://galaxy.ansible.com/api/v1/notifications/
