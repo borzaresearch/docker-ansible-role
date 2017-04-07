@@ -8,4 +8,3 @@
 .vagrant/
 
 *.log
-*.retry
