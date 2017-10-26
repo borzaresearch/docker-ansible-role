@@ -5,4 +5,4 @@
 # of the MIT license. See the LICENSE file for details.
 #
 
-- import_tasks: "{{ansible_distribution|lower}}.yml"
+- include_tasks: "{{ansible_distribution|lower}}.yml"
