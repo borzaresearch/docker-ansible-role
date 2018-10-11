@@ -1,7 +1,7 @@
 # Docker Role for Ansible
 
 [![Build Status](https://img.shields.io/travis/borzaresearch/docker-ansible-role/master.svg)](https://travis-ci.org/borzaresearch/docker-ansible-role)
-[![Ansible Role](https://img.shields.io/ansible/role/16538.svg)](https://galaxy.ansible.com/paulborza/docker/)
+[![Ansible Role](https://img.shields.io/ansible/role/30520.svg)](https://galaxy.ansible.com/paulborza/docker/)
 
 ## Supported OS
 
