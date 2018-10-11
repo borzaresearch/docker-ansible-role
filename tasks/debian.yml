@@ -7,10 +7,10 @@
 
 - name: install ubuntu packages
   become: true
-  apt: name={{item}} update_cache=yes state=installed force=yes
-  with_items:
-    - apt-transport-https
-    - ca-certificates
+  apt:
+    name:
+      - apt-transport-https
+      - ca-certificates
 
 - name: add docker gpg key
   become: true
@@ -23,9 +23,11 @@
 
 - name: install docker engine
   become: true
-  apt: name=docker-engine update_cache=yes state=installed force=yes
+  apt:
+    name: docker-engine
 
 # docker-py is required by the docker ansible module.
 - name: install docker python package
   become: true
-  pip: name=docker-py
+  pip:
+    name: docker-py

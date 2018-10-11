@@ -1,4 +1,4 @@
-# Docker role for Ansible
+# Docker Role for Ansible
 
 [![Build Status](https://img.shields.io/travis/paulborza/docker-ansible-role/master.svg)](https://travis-ci.org/paulborza/docker-ansible-role)
 [![Ansible Role](https://img.shields.io/ansible/role/16538.svg)](https://galaxy.ansible.com/paulborza/docker/)
